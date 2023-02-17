@@ -1,17 +1,15 @@
-FROM golang:alpine
+FROM golang:1.16-alpine
 
 WORKDIR /app
 
 COPY go.mod ./
-
 COPY go.sum ./
-
 RUN go mod download
 
 COPY *.go ./
 
-RUN go build -o /rest-api
+RUN go build -o /docker-gs-ping
 
-EXPOSE 8010
+EXPOSE 8080
 
-CMD [ "/rest-api" ]
+CMD [ "/docker-gs-ping" ]
