@@ -41,5 +41,5 @@ func main() {
     }))
 	router.GET("/",getBooks )
 	router.POST("/books", postBooks)
-	router.Run("localhost:8081")
+	router.Run("0.0.0.0:8080")
 }

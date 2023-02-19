@@ -1,4 +1,4 @@
-FROM golang:1.16-alpine
+FROM golang:1.18-alpine
 
 WORKDIR /app
 
@@ -8,8 +8,8 @@ RUN go mod download
 
 COPY *.go ./
 
-RUN go build -o /docker-gs-ping
+RUN go build -o /library-project
 
 EXPOSE 8080
 
-CMD [ "/docker-gs-ping" ]
+CMD [ "/library-project" ]
