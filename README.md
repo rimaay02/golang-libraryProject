@@ -1,6 +1,6 @@
 # golang-libraryProject
 
-1. make sure you have docker installed in yout local computer.
+1. make sure you have docker installed in you local computer.
 2. Unzip the file and open terminal as admin, make sure you are inside the root folder "library-project".
 3. type "docker compose up" and enter
 4. open localhost:3000
